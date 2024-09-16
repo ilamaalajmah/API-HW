@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Page</title>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            logout();
+        });
+        function logout() {
+            localStorage.removeItem('loggedIn');
+            localStorage.removeItem('user');
+            window.location.href = 'index.html';
+        }
+    </script>
+
+</head>
+<body>
+    <p>Logout</p>
+    <script src="./main.js"></script>
+
+</body>
+</html>
